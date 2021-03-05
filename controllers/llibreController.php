@@ -13,6 +13,7 @@ class llibreController{
 
     public function afegir(){
         
+        
     }
     public function default(){
 

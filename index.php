@@ -1,10 +1,14 @@
 <!DOCTYPE html>
+<?php
+  require_once "config/database.php";
+  require_once "autoload.php";
+  require_once "config/parameters.php";?>
 <html>
 <head>
 <title>Page Title</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="<?=base_url?>assets/css/style.css">
 </head>
 <body>
 
@@ -36,9 +40,9 @@
   <div class="main">
     <h2>LLIBRES</h2>
 
-  <?php
-  require_once "config/database.php";
-  require_once "autoload.php";
+    <?php
+
+
   if(isset($_GET['controller'])){
     $nom_controlador = $_GET['controller'] . "Controller";
 

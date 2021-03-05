@@ -27,6 +27,7 @@ class usuari{
     
     public function insertar(){
         $con = database::conectar();
+        
 
     }
 
